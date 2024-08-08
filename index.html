@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Neon Summer Cybernetic Realm</title>
+    <title>pfp.s4<title>
     <style>
         body {
-            background: linear-gradient(135deg, #ffca00, #00c3ff);
+            background-color: #000000;
             color: #ffffff;
             font-family: 'Roboto', sans-serif;
             display: flex;
@@ -23,11 +23,12 @@
             border-radius: 15px;
             position: relative;
             width: 350px;
-            filter: drop-shadow(0 0 10px #00ffff);
-            transition: filter 0.5s;
+            filter: drop-shadow(0 0 15px #00ffff);
+            transition: filter 0.5s, transform 0.5s;
         }
         .container:hover {
-            filter: drop-shadow(0 0 15px #ffffff);
+            filter: drop-shadow(0 0 30px #ffffff);
+            transform: scale(1.05);
         }
         .container img.profile-pic {
             width: 150px;
@@ -61,11 +62,11 @@
             border-radius: 10px;
             display: inline-block;
             margin-top: 10px;
-            box-shadow: 0 0 15px #00ffff;
+            box-shadow: 0 0 20px #00ffff;
             transition: box-shadow 0.3s ease-in-out;
         }
         .username:hover {
-            box-shadow: 0 0 20px #ffffff;
+            box-shadow: 0 0 25px #ffffff;
         }
         .username img {
             width: 40px;
@@ -77,7 +78,7 @@
             vertical-align: middle;
             margin-left: 10px;
             font-size: 1.2em;
-            color: #000; /* Changed to black */
+            color: #00ffff;
         }
         .icons {
             margin-top: 15px;
@@ -111,25 +112,30 @@
         }
         .overlay h2 {
             font-size: 1.5em;
+            animation: pulse 1.5s infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
         }
     </style>
 </head>
 <body>
     <div class="overlay" id="overlay">
-        <h2>Click anywhere to enter the nigger zone</h2>
+        <h2>Click anywhere to enter the zone</h2>
     </div>
     <div class="container" id="container">
-        <img src="https://media.discordapp.net/attachments/1269329670386487329/1271046473810841652/download.png?ex=66b5e9c6&is=66b49846&hm=dd2b1482b6a8fcb43e921aa71b74efde173300a078cd0796c3d4bfe7080a371f&=&format=webp&quality=lossless" class="profile-pic" alt="Nightmare Profile Picture">
+        <img src="https://cdn.discordapp.com/avatars/1216306749628485664/a_05318713f4832ff2b35626e2e19cbb32.gif?size=4096" class="profile-pic" alt="Nightmare Profile Picture">
         <h1>s420z0</h1>
         <p></p>
         <div class="username">
-            <img src="https://media.discordapp.net/attachments/1269329670386487329/1271046473810841652/download.png?ex=66b5e9c6&is=66b49846&hm=dd2b1482b6a8fcb43e921aa71b74efde173300a078cd0796c3d4bfe7080a371f&=&format=webp&quality=lossless" alt="Nightmare Username Picture">
+            <img src="https://cdn.discordapp.com/avatars/1216306749628485664/a_05318713f4832ff2b35626e2e19cbb32.gif?size=4096" alt="Nightmare Username Picture">
             <span>s420z0</span>
         </div>
         <div class="icons">
             <a href="https://discord.gg/RuZSpgNtx7"><img src="https://img.icons8.com/ios-filled/50/ffffff/discord.png" alt="Discord Icon"></a>
         </div>
-        <audio id="audio" src="SpotifyMate.com - Watch This - ARIZONATEARS Pluggnb Remix - Lil Uzi Vert.mp3" loop></audio>
+        <audio id="audio" src="Bugzy Malone - BIG STEPPIN.mp3" loop></audio>
     </div>
     <script>
         document.getElementById('overlay').addEventListener('click', function() {
